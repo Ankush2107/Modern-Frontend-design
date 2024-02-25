@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #main {
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    z-index: 5;
+  }
+  .bgimage {
+    width: 75px;
+    height: 100px;
+    position: absolute;
+  }
+  #title {
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Outfit", sans-serif;
+    opacity: 0;
+    transform: translatey(30px);
+    transition: 300ms ease;
+    pointer-events: none;
+  }
+  img {
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: none;
+    transition: 300ms ease;
+  }
+  #main:hover {
+    filter: brightness(0.3);
+  }
+  #main:hover ~ #title {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+  #main:hover ~ .bgimage {
+    transform: translate(130px, 130px) rotate(30deg);
+    animation: float 3s ease infinite forwards;
+  }
+  #main:hover ~ .bgimage:nth-child(2) {
+    transform: translate(-130px, 130px) rotate(-30deg);
+  }
+  #main:hover ~ .bgimage:nth-child(3) {
+    transform: translate(130px, -130px) rotate(150deg);
+  }
+  #main:hover ~ .bgimage:nth-child(4) {
+    transform: translate(-130px, -130px) rotate(30deg);
+  }
+  @keyframes float {
+    from,
+    to {
+      rotate: 15deg;
+      scale: 1.1;
+    }
+    50% {
+      rotate: 0deg;
+      scale: 1;
+    }
+  }
+  

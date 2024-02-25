@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #trigger {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: 30;
+  }
+  #container {
+    font-size: 140px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Satoshi", sans-serif;
+    color: #fff;
+  
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: linear-gradient(to right, #0965c0, #b330e1);
+    border: none;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  
+    position: absolute;
+    transition: transform 5s ease;
+  }
+  
+  #trigger:hover ~ #container:nth-child(even) {
+    transform: rotate(-360deg);
+  }
+  #trigger:hover ~ #container:nth-child(odd) {
+    transform: rotate(360deg);
+  }
+  
