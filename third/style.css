@@ -77,10 +77,28 @@ body {
   background-image: url(https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 .card-3 {
+  background-image: url(https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card-4 {
   background-image: url(https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
-.card-4 {
-  background-image: url(https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+.card-1:hover {
+  transition: 1s;
+  scale: 1.1;
+}
+.card-2:hover {
+  transition: 1s;
+  scale: 1.1;
+}
+.card-3:hover {
+  transition: 1s;
+  scale: 1.1;
+}
+.card-4:hover {
+  transition: 1s;
+  scale: 1.1;
 }
 
 @media only screen and (max-width: 1000px) {
