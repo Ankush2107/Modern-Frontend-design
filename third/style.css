@@ -2,7 +2,7 @@
 :root {
   --background-color: rgb(221, 241, 221);
   --main-text: #282f1e;
-  --red-color: #a41d20;
+  --green-color: #7dc116;
 }
 * {
   margin: 0;
@@ -62,7 +62,7 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 .cards > .card > h2 {
-  color: var(--red-color);
+  color: var(--green-color);
   position: absolute;
   bottom: 0;
   left: 50%;
